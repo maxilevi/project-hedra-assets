@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.77.0 commit date:2016-04-05, commit time:18:12, hash:abf6f08</authoring_tool>
+    </contributor>
+    <created>2017-12-23T01:29:56</created>
+    <modified>2017-12-23T01:29:56</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects/>
+  <library_animations>
+    <animation id="Armature_Root_pose_matrix">
+      <source id="Armature_Root_pose_matrix-input">
+        <float_array id="Armature_Root_pose_matrix-input-array" count="5">0 0.4166666 0.8333333 1.25 1.625</float_array>
+        <technique_common>
+          <accessor source="#Armature_Root_pose_matrix-input-array" count="5" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Armature_Root_pose_matrix-output">
+        <float_array id="Armature_Root_pose_matrix-output-array" count="80">0.04622704 -0.02790585 -0.9985412 0.0220922 0.2733504 0.9618093 -0.01422468 -0.1757467 0.9608032 -0.272294 0.05208967 0.9312477 0 0 0 1 0.04622704 -0.02790585 -0.9985411 0.0220922 0.2944296 0.9555837 -0.01307484 -0.1757467 0.9545545 -0.2933956 0.05239011 0.9312477 0 0 0 1 0.04622704 -0.02790585 -0.9985411 0.0220922 0.3153662 0.9488952 -0.01191866 -0.1757467 0.9478434 -0.3143552 0.05266518 0.9312477 0 0 0 1 0.04622704 -0.02790585 -0.9985411 0.0220922 0.2926176 0.9561388 -0.01317424 -0.1757467 0.9551115 -0.2915817 0.05236521 0.9312477 0 0 0 1 0.04622704 -0.02790585 -0.9985412 0.0220922 0.2733504 0.9618093 -0.01422468 -0.1757467 0.9608032 -0.272294 0.05208967 0.9312477 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#Armature_Root_pose_matrix-output-array" count="5" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Armature_Root_pose_matrix-interpolation">
+        <Name_array id="Armature_Root_pose_matrix-interpolation-array" count="5">LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#Armature_Root_pose_matrix-interpolation-array" count="5" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Armature_Root_pose_matrix-sampler">
+        <input semantic="INPUT" source="#Armature_Root_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#Armature_Root_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#Armature_Root_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#Armature_Root_pose_matrix-sampler" target="Root/transform"/>
+    </animation>
+    <animation id="Armature_Wheels_pose_matrix">
+      <source id="Armature_Wheels_pose_matrix-input">
+        <float_array id="Armature_Wheels_pose_matrix-input-array" count="5">0 0.4166666 0.8333333 1.25 1.625</float_array>
+        <technique_common>
+          <accessor source="#Armature_Wheels_pose_matrix-input-array" count="5" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Armature_Wheels_pose_matrix-output">
+        <float_array id="Armature_Wheels_pose_matrix-output-array" count="80">-0.1541867 -0.9608766 -0.2300938 5.96046e-8 -0.3745304 0.2723387 -0.8863177 1.044969 0.914305 -0.05048116 -0.4018683 3.72529e-9 0 0 0 1 0.3574442 -0.2734242 0.8930137 5.96046e-8 -0.08631358 -0.9617636 -0.2599257 1.044969 0.9299375 0.01582972 -0.3673768 3.72529e-9 0 0 0 1 0.07008403 0.9607277 0.2684977 5.96046e-8 0.4252933 -0.2722487 0.8631377 1.044969 0.902338 0.05369803 -0.4276712 3.72529e-9 0 0 0 1 -0.4415467 0.2732753 -0.8546098 5.96046e-8 0.1370767 0.9618537 0.2367456 1.044969 0.8867055 -0.01261282 -0.4621626 3.72529e-9 0 0 0 1 -0.4415467 0.2732753 -0.8546098 5.96046e-8 0.1370767 0.9618537 0.2367456 1.044969 0.8867055 -0.01261282 -0.4621626 3.72529e-9 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#Armature_Wheels_pose_matrix-output-array" count="5" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Armature_Wheels_pose_matrix-interpolation">
+        <Name_array id="Armature_Wheels_pose_matrix-interpolation-array" count="5">LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#Armature_Wheels_pose_matrix-interpolation-array" count="5" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Armature_Wheels_pose_matrix-sampler">
+        <input semantic="INPUT" source="#Armature_Wheels_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#Armature_Wheels_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#Armature_Wheels_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#Armature_Wheels_pose_matrix-sampler" target="Wheels/transform"/>
+    </animation>
+  </library_animations>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Armature" name="Armature" type="NODE">
+        <translate sid="location">0 0 0</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <node id="Root" name="Root" sid="Root" type="JOINT">
+          <matrix sid="transform">0.04622704 -0.02790585 -0.9985411 0.0220922 0.1407579 0.9898182 -0.02114575 -0.1757467 0.9889643 -0.139575 0.04968433 0.8069928 0 0 0 1</matrix>
+          <node id="Wheels" name="Wheels" sid="Wheels" type="JOINT">
+            <matrix sid="transform">-0.09906922 -0.9890377 -0.1095001 5.96046e-8 -0.3859702 0.1396198 -0.9118846 1.044969 0.9171764 -0.04807582 -0.395571 3.72529e-9 0 0 0 1</matrix>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

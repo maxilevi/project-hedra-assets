@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.77.0 commit date:2016-04-05, commit time:18:12, hash:abf6f08</authoring_tool>
+    </contributor>
+    <created>2017-12-23T02:54:04</created>
+    <modified>2017-12-23T02:54:04</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects/>
+  <library_animations>
+    <animation id="Armature_Root_pose_matrix">
+      <source id="Armature_Root_pose_matrix-input">
+        <float_array id="Armature_Root_pose_matrix-input-array" count="2">0 3.333333</float_array>
+        <technique_common>
+          <accessor source="#Armature_Root_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Armature_Root_pose_matrix-output">
+        <float_array id="Armature_Root_pose_matrix-output-array" count="32">0.04622705 -0.02790585 -0.9985411 0.0220922 0.1072108 0.9939745 -0.02281495 -0.1757467 0.9931611 -0.1059997 0.04894031 0.7648495 0 0 0 1 0.04622704 -0.02790585 -0.9985411 0.0220922 0.2928407 0.9560707 -0.01316201 -0.1757467 0.9550431 -0.291805 0.05236829 0.9312479 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#Armature_Root_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Armature_Root_pose_matrix-interpolation">
+        <Name_array id="Armature_Root_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#Armature_Root_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Armature_Root_pose_matrix-sampler">
+        <input semantic="INPUT" source="#Armature_Root_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#Armature_Root_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#Armature_Root_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#Armature_Root_pose_matrix-sampler" target="Root/transform"/>
+    </animation>
+    <animation id="Armature_Wheels_pose_matrix">
+      <source id="Armature_Wheels_pose_matrix-input">
+        <float_array id="Armature_Wheels_pose_matrix-input-array" count="2">0 3.333333</float_array>
+        <technique_common>
+          <accessor source="#Armature_Wheels_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Armature_Wheels_pose_matrix-output">
+        <float_array id="Armature_Wheels_pose_matrix-output-array" count="32">-0.162291 -0.9551167 -0.2478193 0 -0.3721752 0.2918497 -0.8810843 1.044969 0.9138641 -0.05075978 -0.4028352 0 0 0 0 1 -0.162291 -0.9551167 -0.2478193 0 -0.3721752 0.2918497 -0.8810843 1.044969 0.9138641 -0.05075978 -0.4028352 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#Armature_Wheels_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Armature_Wheels_pose_matrix-interpolation">
+        <Name_array id="Armature_Wheels_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#Armature_Wheels_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Armature_Wheels_pose_matrix-sampler">
+        <input semantic="INPUT" source="#Armature_Wheels_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#Armature_Wheels_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#Armature_Wheels_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#Armature_Wheels_pose_matrix-sampler" target="Wheels/transform"/>
+    </animation>
+  </library_animations>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Armature" name="Armature" type="NODE">
+        <translate sid="location">0 0 0</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <node id="Root" name="Root" sid="Root" type="JOINT">
+          <matrix sid="transform">0.04622704 -0.02790585 -0.9985411 0.0220922 0.1407579 0.9898182 -0.02114575 -0.1757467 0.9889643 -0.139575 0.04968433 0.8069928 0 0 0 1</matrix>
+          <node id="Wheels" name="Wheels" sid="Wheels" type="JOINT">
+            <matrix sid="transform">-0.09906922 -0.9890377 -0.1095001 5.96046e-8 -0.3859702 0.1396198 -0.9118846 1.044969 0.9171764 -0.04807582 -0.395571 3.72529e-9 0 0 0 1</matrix>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
