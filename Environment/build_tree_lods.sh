@@ -1,0 +1,6 @@
+(cd AppleTrees && python "../../../hedra-tools/villages/build-lod.py")
+(cd Cypress && python "../../../hedra-tools/villages/build-lod.py")
+(cd Oaks && python "../../../hedra-tools/villages/build-lod.py")
+(cd DeadTrees && python "../../../hedra-tools/villages/build-lod.py")
+(cd Pines && python "../../../hedra-tools/villages/build-lod.py")
+(cd TallTrees && python "../../../hedra-tools/villages/build-lod.py")
