@@ -5,3 +5,4 @@
 (cd Pines && python "../../../hedra-tools/villages/build-lod.py")
 (cd TallTrees && python "../../../hedra-tools/villages/build-lod.py")
 (cd FarmPlants && python "../../../hedra-tools/villages/build-lod.py")
+(cd Misc && python "../../../hedra-tools/villages/build-lod.py")
