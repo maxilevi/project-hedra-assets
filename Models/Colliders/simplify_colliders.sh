@@ -1,1 +1,1 @@
-python "../../../hedra-tools/villages/execute.py" "../../../hedra-tools/villages/simplify-collider.py" --folder="./" --type=create
+python "../../../hedra-tools/villages/execute.py" "../../../hedra-tools/villages/simplify_collider.py" --folder="./" --type=create
