@@ -1,0 +1,1 @@
+( cd Gazebo0 && python "../../../hedra-tools/villages/execute.py" "../../../hedra-tools/villages/create-lod.py" --file=./Gazebo0.ply --type=create)
